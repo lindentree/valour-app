@@ -16,6 +16,7 @@ export default class InitialQuestions extends React.Component {
       </Text>
 
       <Button
+        color="#136699"
         title="Casual"
         onPress={() => navigate('Areas')}
       />

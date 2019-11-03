@@ -23,8 +23,8 @@ export default class HomeScreen extends React.Component {
     return (
     <View style={styles.container}>
       <LinearGradient
-          colors={['#f58a42', '#3b5998', '#192f6a']}
-          style={{ padding: 15, alignItems: 'center', borderRadius: 5 }}>
+          colors={['#f58a42', '#8E1A23']}
+          style={styles.linearGradient}>
       </LinearGradient>
 
       <ScrollView
@@ -35,7 +35,7 @@ export default class HomeScreen extends React.Component {
             source={
               __DEV__
                 ? require('../assets/images/valour.png')
-                : require('../assets/images/robot-prod.png')
+                : require('../assets/images/valour.png')
             }
             style={styles.welcomeImage}
           />
@@ -206,5 +206,11 @@ const styles = StyleSheet.create({
   helpLinkText: {
     fontSize: 14,
     color: '#2e78b7',
+  },
+  linearGradient: {
+    flex: 1,
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderRadius: 5
   },
 });
