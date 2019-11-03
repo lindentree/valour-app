@@ -29,19 +29,16 @@ export default function HomeScreen() {
           />
         </View>
 
-        <View style={styles.getStartedContainer}>
-          <DevelopmentModeNotice />
+        <Text style={styles.appTitle}>
+          Valour
+        </Text>
 
+        <View style={styles.getStartedContainer}>
+          
           <Text style={styles.getStartedText}>You have joined the quest of volunteers!</Text>
 
-          <View
-            style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-            <MonoText>screens/HomeScreen.js</MonoText>
-          </View>
-
-          <Text style={styles.getStartedText}>
-            Change this text and your app will automatically reload.
-          </Text>
+          
+          
         </View>
 
         <View style={styles.helpContainer}>
@@ -108,10 +105,20 @@ function handleHelpPress() {
   );
 }
 
+function DummmyFunction () {
+  WebBrowser.openBrowserAsync(
+  );
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+  },
+  appTitle: {
+    color: 'green',
+    fontSize: 40,
+    textAlign: 'center'
   },
   developmentModeText: {
     marginBottom: 20,
