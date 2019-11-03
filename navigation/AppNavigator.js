@@ -5,8 +5,10 @@ import { createStackNavigator } from 'react-navigation-stack';
 import MainTabNavigator from './MainTabNavigator';
 import InitialQuestions from '../screens/InitialQuestions';
 import ContributorAreas from '../screens/ContributorAreas';
-//import ContributeMoney from '../screens/ContributeMoney';
-
+import ContributeMoney from '../screens/ContributeMoney';
+import ContributeTime from '../screens/ContributeTime';
+import ContributeItems from '../screens/ContributeItems';
+import CreateProfile from '../screens/CreateProfile';
 
 export default createAppContainer(
   createStackNavigator({
@@ -23,9 +25,19 @@ export default createAppContainer(
     Areas: {
       screen: ContributorAreas,
     },
-    // Money: {
-    //   screen: ContributeMoney,
-    // },
+    Money: {
+      screen: ContributeMoney,
+    },
+    Time: {
+      screen: ContributeTime,
+    },
+    Items: {
+      screen: ContributeItems,
+    },
+    SignUp: {
+      screen: CreateProfile
+    },
+
 
 
   })
