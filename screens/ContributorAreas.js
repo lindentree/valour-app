@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, View, Text, StyleSheet } from 'react-native';
+import { Button, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default class ContributorAreas extends React.Component {
  
@@ -10,20 +10,24 @@ export default class ContributorAreas extends React.Component {
       <Text style={styles.getStartedText}>
         What can you contribute now?
       </Text>
-      <Button
-        title="Money"
-        onPress={() => this.props.navigation.navigate('Money')}
-      />
-
-      <Button
-        title="Time"
-        onPress={() => this.props.navigation.navigate('Time')}
-      />
-
-       <Button
-        title="Items"
-        onPress={() => this.props.navigation.navigate('Items')}
-      />
+      <TouchableOpacity
+            underlayColor="#fff"
+            onPress={() => this.props.navigation.navigate('Money')}
+            style={styles.choiceScreenButton}>
+            <Text style={styles.choiceText}>Money</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+            underlayColor="#fff"
+            onPress={() => this.props.navigation.navigate('Time')}
+            style={styles.choiceScreenButton}>
+            <Text style={styles.choiceText}>Time</Text>
+      </TouchableOpacity>
+          <TouchableOpacity
+            underlayColor="#fff"
+            onPress={() => this.props.navigation.navigate('Items')}
+            style={styles.choiceScreenButton}>
+            <Text style={styles.choiceText}>Items</Text>
+      </TouchableOpacity>
       </View>
     );
   }
@@ -54,6 +58,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginHorizontal: 50,
   },
+  choiceScreenButton:{
+    marginRight:30,
+    marginLeft:30,
+    marginTop:20,
+    marginBottom:20,
+    paddingTop:20,
+    paddingBottom:20,
+    backgroundColor:'#136699',
+    borderRadius:10,
+    borderWidth: 1,
+    borderColor: '#fff'
+  },
+  choiceText:{
+      color:'#fff',
+      textAlign:'center',
+      fontSize: 20,
+      paddingLeft : 20,
+      paddingRight : 20
+  },
   homeScreenFilename: {
     marginVertical: 7,
   },
@@ -66,9 +89,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 4,
   },
   getStartedText: {
-    fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
-    lineHeight: 24,
+    marginTop: 30,
+    fontSize: 30,
+    color: 'black',
+    lineHeight: 40,
     textAlign: 'center',
   },
   

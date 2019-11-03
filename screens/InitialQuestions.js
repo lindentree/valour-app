@@ -12,7 +12,7 @@ export default class InitialQuestions extends React.Component {
     return (
       <View>
       <Text style={styles.getStartedText}>
-        Pick a monthly goal:
+        Choose your giving goal:
       </Text>
 
       <TouchableOpacity
