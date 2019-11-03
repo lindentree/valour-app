@@ -27,7 +27,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.kizuna.valoursf"
+      "bundleIdentifier": "com.kizunateam.valoursf"
     }
   }
 }
