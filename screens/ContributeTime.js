@@ -14,7 +14,7 @@ export default class ContributeTime extends React.Component {
       </Text>
       <Button
         title="Continue"
-        onPress={() => this.props.navigation.navigate('')}
+        onPress={() => this.props.navigation.navigate('SignUp')}
       />
 
       </View>
