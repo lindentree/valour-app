@@ -1,12 +1,32 @@
 import React from 'react';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 import MainTabNavigator from './MainTabNavigator';
+import InitialQuestions from '../screens/InitialQuestions';
+import ContributorAreas from '../screens/ContributorAreas';
+//import ContributeMoney from '../screens/ContributeMoney';
+
 
 export default createAppContainer(
-  createSwitchNavigator({
+  createStackNavigator({
     // You could add another route here for authentication.
     // Read more at https://reactnavigation.org/docs/en/auth-flow.html
-    Main: MainTabNavigator,
+    Landing: {
+
+      screen: MainTabNavigator,
+  
+    },
+    Goals: {
+      screen: InitialQuestions,
+    },
+    Areas: {
+      screen: ContributorAreas,
+    },
+    // Money: {
+    //   screen: ContributeMoney,
+    // },
+
+
   })
 );

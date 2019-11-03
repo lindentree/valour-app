@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Valour",
+    "name": "ValourSF",
     "slug": "valour-app",
     "privacy": "public",
     "sdkVersion": "35.0.0",
@@ -9,9 +9,9 @@
       "android",
       "web"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/valour.png",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",

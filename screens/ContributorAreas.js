@@ -9,17 +9,17 @@ export default class ContributorAreas extends React.Component {
       <View>
       <Button
         title="Money"
-        onPress={() => this.props.navigation.navigate('Goals')}
+        onPress={() => this.props.navigation.navigate('Money')}
       />
 
       <Button
         title="Time"
-        onPress={() => this.props.navigation.navigate('Goals')}
+        onPress={() => this.props.navigation.navigate('Money')}
       />
 
        <Button
         title="Items"
-        onPress={() => this.props.navigation.navigate('Goals')}
+        onPress={() => this.props.navigation.navigate('Money')}
       />
       </View>
     );
