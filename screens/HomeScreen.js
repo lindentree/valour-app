@@ -42,12 +42,12 @@ export default class HomeScreen extends React.Component {
         </View>
        
         <Text style={styles.appTitle}>
-          ValourSF
+          Welcome to ValourSF
         </Text>
 
         <View style={styles.getStartedContainer}>
           
-          <Text style={styles.getStartedText}>You have joined the quest of volunteers!</Text>
+          <Text style={styles.getStartedText}>You're one step closer to becoming a valiant volunteer!</Text>
 
            <Button
             title="Get Started"
