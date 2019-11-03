@@ -1,6 +1,8 @@
 import React from 'react';
+import { Button, View, Text } from 'react-native';
 
-class SelectGoalsScreen extends React.Component {
+
+export default class InitialQuestions extends React.Component {
   static navigationOptions = {
     title: 'Select monthly goals',
   };

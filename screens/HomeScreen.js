@@ -8,9 +8,12 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Button,
 } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+
+
 
 import { MonoText } from '../components/StyledText';
 
@@ -33,14 +36,17 @@ export default class HomeScreen extends React.Component {
         </View>
 
         <Text style={styles.appTitle}>
-          Valour
+          ValourSF
         </Text>
 
         <View style={styles.getStartedContainer}>
           
           <Text style={styles.getStartedText}>You have joined the quest of volunteers!</Text>
 
-          
+           <Button
+            title="Get Started"
+            onPress={() => this.props.navigation.navigate('Goals')}
+           />
           
         </View>
 
