@@ -9,11 +9,14 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 import { MonoText } from '../components/StyledText';
 
-export default function HomeScreen() {
-  return (
+export default class HomeScreen extends React.Component {
+  render() {
+    return (
     <View style={styles.container}>
       <ScrollView
         style={styles.container}
@@ -64,6 +67,7 @@ export default function HomeScreen() {
       </View>
     </View>
   );
+  }
 }
 
 HomeScreen.navigationOptions = {
