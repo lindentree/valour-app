@@ -31,38 +31,27 @@ export default class HomeScreen extends React.Component {
         style={styles.container}
         contentContainerStyle={styles.contentContainer}>
         <View style={styles.welcomeContainer}>
-          <Image
-            source={
-              __DEV__
-                ? require('../assets/images/valour.png')
-                : require('../assets/images/valour.png')
-            }
-            style={styles.welcomeImage}
-          />
+        
         </View>
        
-        <Text style={styles.appTitle}>
-          Welcome to ValourSF
+        <Text style={styles.appIntroFirst}>
+          Welcome to <Text style={styles.appIntroSecond}> ValourSF </Text>
         </Text>
 
         <View style={styles.getStartedContainer}>
           
           <Text style={styles.getStartedText}>You're one step closer to becoming a valiant volunteer!</Text>
 
-           <Button
-            title="Get Started"
+           <TouchableOpacity
+            underlayColor="#fff"
             onPress={() => this.props.navigation.navigate('Goals')}
-           />
+            style={styles.loginScreenButton}>
+            <Text style={styles.loginText}>Let's Get Started</Text>
+           </TouchableOpacity>
           
         </View>
 
-        <View style={styles.helpContainer}>
-          <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
-            <Text style={styles.helpLinkText}>
-              Help, it didn’t automatically reload!
-            </Text>
-          </TouchableOpacity>
-        </View>
+      
 
       </ScrollView>
 
@@ -120,12 +109,34 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-  appTitle: {
-    color: 'green',
+  appIntroFirst: {
+    color: 'black',
     fontSize: 40,
     textAlign: 'center'
   },
-  developmentModeText: {
+  appIntroSecond: {
+    color: '#136699',
+    fontSize: 40,
+    textAlign: 'center'
+  },
+  loginScreenButton:{
+    marginRight:40,
+    marginLeft:40,
+    marginTop:10,
+    paddingTop:10,
+    paddingBottom:10,
+    backgroundColor:'#FF9100',
+    borderRadius:10,
+    borderWidth: 1,
+    borderColor: '#fff'
+  },
+  loginText:{
+      color:'#fff',
+      textAlign:'center',
+      paddingLeft : 10,
+      paddingRight : 10
+  },
+  developmentModeText:{
     marginBottom: 20,
     color: 'rgba(0,0,0,0.4)',
     fontSize: 14,
