@@ -9,7 +9,7 @@
       "android",
       "web"
     ],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/images/ValourIcon.png",
     "splash": {
@@ -27,7 +27,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.kizunateam.valoursf"
+      "bundleIdentifier": "com.kizuna.valoursf",
+      "ITSAppUsesNonExemptEncryption": "NO"
     }
   }
 }
