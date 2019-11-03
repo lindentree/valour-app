@@ -7,6 +7,9 @@ export default class ContributorAreas extends React.Component {
     const {navigate} = this.props.navigation;
     return (
       <View>
+      <Text>
+        What can you contribute now?
+      </Text>
       <Button
         title="Money"
         onPress={() => this.props.navigation.navigate('Money')}

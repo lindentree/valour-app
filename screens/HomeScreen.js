@@ -13,6 +13,7 @@ import {
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
+import { LinearGradient } from 'expo-linear-gradient';
 
 
 import { MonoText } from '../components/StyledText';
@@ -21,6 +22,11 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
     <View style={styles.container}>
+      <LinearGradient
+          colors={['#f58a42', '#3b5998', '#192f6a']}
+          style={{ padding: 15, alignItems: 'center', borderRadius: 5 }}>
+      </LinearGradient>
+
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}>
@@ -34,7 +40,7 @@ export default class HomeScreen extends React.Component {
             style={styles.welcomeImage}
           />
         </View>
-
+       
         <Text style={styles.appTitle}>
           ValourSF
         </Text>
@@ -57,9 +63,9 @@ export default class HomeScreen extends React.Component {
             </Text>
           </TouchableOpacity>
         </View>
+
       </ScrollView>
 
-   
     </View>
   );
   }
