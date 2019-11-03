@@ -14,7 +14,7 @@ export default class ContributorAreas extends React.Component {
 
       <Button
         title="Time"
-        onPress={() => this.props.navigation.navigate('Money')}
+        onPress={() => this.props.navigation.navigate('Time')}
       />
 
        <Button
