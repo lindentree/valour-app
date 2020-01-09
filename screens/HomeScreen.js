@@ -40,13 +40,13 @@ export default class HomeScreen extends React.Component {
 
         <View style={styles.getStartedContainer}>
           
-          <Text style={styles.getStartedText}>You're one step closer to becoming a valiant volunteer!</Text>
+          <Text style={styles.getStartedText}>`You're one step closer to becoming a valiant volunteer!`</Text>
 
            <TouchableOpacity
             underlayColor="#fff"
             onPress={() => this.props.navigation.navigate('Goals')}
             style={styles.loginScreenButton}>
-            <Text style={styles.loginText}>Let's Get Started</Text>
+            <Text style={styles.loginText}>`Let's Get Started`</Text>
            </TouchableOpacity>
           
         </View>
